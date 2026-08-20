@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace CashFlow.Comunication.Enums;
 
-namespace CashFlow.Comunication.Enums;
-
-internal class PaymentType
+public enum PaymentType
 {
+    CreditCard = 1,
+    Pix = 2
 }
