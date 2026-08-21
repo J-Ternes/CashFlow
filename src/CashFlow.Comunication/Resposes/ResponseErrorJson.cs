@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace CashFlow.Comunication.Resposes;
 
-namespace CashFlow.Comunication.Resposes;
-
-internal class ResponseErrorJson
+public class ResponseErrorJson
 {
+    public required string ErrorMessage { get; set; } = string.Empty;
 }
