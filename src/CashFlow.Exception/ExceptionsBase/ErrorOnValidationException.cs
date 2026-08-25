@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace CashFlow.Exception.ExceptionsBase;
 
-namespace CashFlow.Exception.ExceptionsBase;
-
-internal class ErrorOnValidationException
+public class ErrorOnValidationException : CashFlowException
 {
+    public List<string> Errors { get; set; }
+    public ErrorOnValidationException(List <string> errorMessages)
+    {
+        Errors = errorMessages;
+    }
+
 }
